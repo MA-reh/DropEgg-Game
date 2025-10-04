@@ -1,7 +1,7 @@
 function startGame() {
-    moveEgg(allEggs[0], Math.random() * .75 + 1)
-    moveEgg(allEggs[1], Math.random() * .75 + 1)
-    moveEgg(allEggs[2], Math.random() * .75 + 1)
+    moveEgg(allEggs[0], Math.random() * .5 + 1)
+    moveEgg(allEggs[1], Math.random() * 2.55 + 1)
+    moveEgg(allEggs[2], Math.random() + 1)
 
     let theGame = requestAnimationFrame(startGame);
 

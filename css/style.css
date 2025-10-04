@@ -3,6 +3,7 @@
   background: -webkit-linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
   background: linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
   height: 100vh;
+  max-height: 100vh;
   position: relative;
   overflow: hidden;
 }
