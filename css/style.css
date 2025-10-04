@@ -2,8 +2,8 @@
   background: #00416a;
   background: -webkit-linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
   background: linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
-  height: 100vh;
-  max-height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   position: relative;
   overflow: hidden;
 }
