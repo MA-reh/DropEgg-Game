@@ -6,8 +6,8 @@ let Basket = $("#Game #Basket"),
     brokenEggs = $(".brokenEggs .brokenEgg"),
     LiveScore = 5,
     score = 0,
-    highestScore = 0;
-
+    highestScore = 0,
+    touchStart;
 
 if (localStorage.getItem("highestScore") == null) {
     updateLocalStorage()
@@ -16,19 +16,27 @@ if (localStorage.getItem("highestScore") == null) {
     $("#HighestScore").text(highestScore);
 }
 
-$(window).mousemove(function (e) {
-    let mouseMoveX = e.pageX
-
-    if (mouseMoveX >= halfWidthBAsket && mouseMoveX <= gameWidth - halfWidthBAsket) {
-        Basket.css({
-            left: mouseMoveX - halfWidthBAsket,
-        })
-    }
-})
-
 $("#startGame").click(function () {
     $(this).slideUp(1000, function () {
         resetGame()
         startGame()
     })
 })
+
+window.addEventListener("touchmove", (e) => {
+    e.preventDefault();
+    moveBasket(e.touches[0].pageX);
+})
+
+$(window).mousemove(function (e) {
+    moveBasket(e.pageX)
+})
+
+function moveBasket(distanceX) {
+    let mouseMoveX = distanceX;
+    if (mouseMoveX >= halfWidthBAsket && mouseMoveX <= gameWidth - halfWidthBAsket) {
+        Basket.css({
+            left: mouseMoveX - halfWidthBAsket,
+        })
+    }
+}
