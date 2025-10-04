@@ -86,3 +86,19 @@ function collision(item1, item2) {
 function updateLocalStorage() {
     localStorage.setItem("highestScore", highestScore);
 }
+
+function moveBasket(distanceX) {
+    let mouseMoveX = distanceX;
+    if (mouseMoveX >= halfWidthBAsket && mouseMoveX <= gameWidth - halfWidthBAsket) {
+        Basket.css({
+            left: mouseMoveX - halfWidthBAsket,
+        })
+    }
+}
+
+// chatGPT Tell Me that
+function setGameHeight() {
+    $("#Game").css({
+        height: window.innerHeight + "px",
+    })
+}

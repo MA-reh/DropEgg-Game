@@ -60,6 +60,7 @@
         position: absolute;
         top: 50%;
         left: 0;
+        transform: translateY(-50%);
         width: 100%;
         color: #fff;
         text-align: center;
@@ -68,7 +69,6 @@
         cursor: pointer;
         z-index: 10;
         padding: 15px;
-        transform: translateY(-50%);
         @include respond(350) {
             padding: 10px;
             font-size: 18px;
