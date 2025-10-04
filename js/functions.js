@@ -98,7 +98,9 @@ function moveBasket(distanceX) {
 
 // chatGPT Tell Me that
 function setGameHeight() {
-    $("#Game").css({
-        height: window.innerHeight + "px",
-    })
+    // $("#Game").css({
+    //     height:,
+    // })
+
+    document.querySelector("#Game").style.height =  window.innerHeight + "px";
 }
