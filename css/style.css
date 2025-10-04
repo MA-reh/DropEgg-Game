@@ -1,0 +1,207 @@
+#Game {
+  background: #00416a;
+  background: -webkit-linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
+  background: linear-gradient(to top, rgba(154, 182, 11, 0.7333333333), #0e5683);
+  height: 100vh;
+  position: relative;
+}
+#Game nav {
+  background-color: rgb(108, 5, 160);
+  color: #fff;
+}
+#Game nav .spacial-text {
+  color: #ff0000;
+}
+#Game .chickens {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+#Game .chickens::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 0;
+  left: 0;
+  background-color: #3e3e3e;
+  height: 25px;
+}
+#Game .chickens .chicken {
+  position: relative;
+  width: 150px;
+}
+@media (max-width: 1300px) {
+  #Game .chickens .chicken {
+    width: 85px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1300px) {
+  #Game .chickens .chicken {
+    width: 125px;
+  }
+}
+#Game .chickens .chicken i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d09b60;
+  font-size: 20px;
+  filter: drop-shadow(0px 0px 4px #fff);
+}
+@media (max-width: 1300px) {
+  #Game .chickens .chicken i {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1300px) {
+  #Game .chickens .chicken i {
+    font-size: 18px;
+  }
+}
+#Game .chickens .chicken img {
+  position: relative;
+}
+#Game #startGame {
+  background-color: rgb(32, 189, 32);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+  padding: 15px;
+  transform: translateY(-50%);
+}
+@media (max-width: 1300px) {
+  #Game #startGame {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1300px) {
+  #Game #startGame {
+    padding: 12px;
+    font-size: 20px;
+  }
+}
+#Game #Basket {
+  position: absolute;
+  bottom: 25%;
+  width: 150px;
+  z-index: 11;
+}
+@media (max-width: 1300px) {
+  #Game #Basket {
+    width: 95px;
+    bottom: 15%;
+  }
+}
+@media (min-width: 576px) and (max-width: 1300px) {
+  #Game #Basket {
+    width: 125px;
+    bottom: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+  #Game #Basket {
+    width: 150px;
+    bottom: 20%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  #Game #Basket {
+    width: 150px;
+    bottom: 25%;
+  }
+}
+#Game #Basket span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+#Game footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Game footer .brokenEggs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00416a;
+}
+@media (max-width: 1300px) {
+  #Game footer .brokenEggs {
+    transform: translateY(-75%);
+  }
+}
+@media (min-width: 371px) and (max-width: 1300px) {
+  #Game footer .brokenEggs {
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+  #Game footer .brokenEggs {
+    transform: translateY(0%);
+  }
+}
+#Game footer .brokenEggs .brokenEgg {
+  width: 150px;
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#Game footer .brokenEggs .brokenEgg:nth-of-type(1) {
+  left: 25%;
+}
+#Game footer .brokenEggs .brokenEgg:nth-of-type(2) {
+  left: 50%;
+}
+#Game footer .brokenEggs .brokenEgg:nth-of-type(3) {
+  left: 75%;
+}
+@media (max-width: 1300px) {
+  #Game footer .brokenEggs .brokenEgg {
+    width: 75px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1300px) {
+  #Game footer .brokenEggs .brokenEgg {
+    width: 95px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+  #Game footer .brokenEggs .brokenEgg {
+    width: 120px;
+  }
+}
+#Game footer > img {
+  width: 80%;
+}
+@media (max-width: 1300px) {
+  #Game footer > img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
