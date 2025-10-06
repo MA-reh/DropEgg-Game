@@ -1,7 +1,7 @@
 function startGame() {
-    moveEgg(allEggs[0], Math.random() * .5 + 1)
-    moveEgg(allEggs[1], Math.random() * 2.55 + 1)
-    moveEgg(allEggs[2], Math.random() + 1)
+    moveEgg(allEggs[0], Math.random() * (1 + score / 15))
+    moveEgg(allEggs[1], Math.random() * (1 + score / 15))
+    moveEgg(allEggs[2], Math.random() * (1 + score / 15))
 
     let theGame = requestAnimationFrame(startGame);
 
@@ -94,13 +94,4 @@ function moveBasket(distanceX) {
             left: mouseMoveX - halfWidthBAsket,
         })
     }
-}
-
-// chatGPT Tell Me that
-function setGameHeight() {
-    // $("#Game").css({
-    //     height:,
-    // })
-
-    document.querySelector("#Game").style.height =  window.innerHeight + "px";
 }

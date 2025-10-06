@@ -15,7 +15,6 @@ if (localStorage.getItem("highestScore") == null) {
     highestScore = localStorage.getItem("highestScore");
     $("#HighestScore").text(highestScore);
 }
-window.addEventListener("resize", setGameHeight);
 
 $("#startGame").click(function () {
     $(this).slideUp(1000, function () {
@@ -27,10 +26,9 @@ $("#startGame").click(function () {
 window.addEventListener("touchmove", (e) => {
     e.preventDefault();
     moveBasket(e.touches[0].pageX);
-    console.log(e);
 })
 
 $(window).mousemove(function (e) {
-    moveBasket(e.pageX)
+    moveBasket(e.pageX);
 })
 
